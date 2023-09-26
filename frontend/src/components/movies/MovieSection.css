@@ -1,0 +1,36 @@
+.poster-list {
+  display: flex-end;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.poster-list::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  text-align: left;
+  color: black;
+  padding-left: 10px;
+}
+
+.error-msg {
+  color: red;
+}
+
+.description-text {
+  color: black;
+  text-align: left;
+  border: 1px solid #ccc; /* Specify the border style and color */
+  padding: 10px; /* Add some padding to the text within the border */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-color: white;
+}
+
+.movieList{
+  background-color: pink;
+}

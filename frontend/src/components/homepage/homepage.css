@@ -1,0 +1,29 @@
+.text-center {
+  /* put around the vertical center of page */
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  background-color: black;
+  color: #fafaff;
+  font-size: 20px;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 1em;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #2e54e0;
+  color: #ffffff;
+}
+
+.btn-margin {
+  margin-right: 10px; /* Adjust the desired margin between the buttons */
+}
+
+

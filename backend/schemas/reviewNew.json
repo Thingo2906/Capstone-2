@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.review.com/reviewNew.schema.json",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "movie_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10
+    },
+    "comment": {
+      "type": "string"
+    },
+     "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "username",
+    "movieId",
+    "comment",
+    "created_at"
+  ]
+}

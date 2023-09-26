@@ -1,0 +1,10 @@
+.searchMovie{
+  min-height: 100vh;
+}
+
+.overview{
+  width:80%;
+  color:black;
+  text-align: left;
+  margin-left: 10%;
+}

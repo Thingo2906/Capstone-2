@@ -1,0 +1,21 @@
+.searchFrom{
+  top:2px;
+  padding-top: 7vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items:baseline;
+  margin-bottom:15px;
+}
+
+.input-group{
+  display:flex; 
+  align-items:baseline;
+}
+
+.search-icon{
+  color:black;
+  min-height: 3vh;
+  min-width: 3vw;
+  margin-top: 3vh;
+  cursor:pointer;
+}

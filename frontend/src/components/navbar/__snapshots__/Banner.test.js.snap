@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Component matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="banner"
+    style="background-size: cover; background-image: url(http://image.tmdb.org/t/p/original/); background-position: center center;"
+  >
+    <div
+      class="banner-contents"
+    >
+      <h1
+        class="banner-title"
+      />
+      <div
+        class="banner-buttons"
+      >
+        <button
+          class="banner-button"
+        >
+          Play
+        </button>
+        <button
+          class="banner-button"
+        >
+          + My List
+        </button>
+      </div>
+      <h1
+        class="banner-description"
+      />
+    </div>
+    <div
+      class="banner-fadebottom"
+    />
+  </header>
+</DocumentFragment>
+`;

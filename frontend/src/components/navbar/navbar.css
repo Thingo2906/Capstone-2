@@ -1,0 +1,94 @@
+.Navigation {
+  background-color: #7f5539;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #9f7913;
+  text-shadow: -1px 1px 0 rgb(238, 233, 233), 1px 1px 0 rgb(238, 233, 233),
+    1px -1px 0 rgb(238, 233, 233), -1px -1px 0 rgb(238, 233, 233);
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  /* position: relative; */
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links-right {
+  position: fixed;
+  gap: 10px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(250, 246, 246);
+  padding-right: 10px;
+}
+
+.navbar-links-right li {
+  list-style-type: none;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 0;
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  padding-left: 80px;
+}
+
+.nav-logo {
+  /* position: fixed; */
+  left: 10px;
+  width: 80px;
+  object-fit: contain;
+  padding-top: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 900px;
+}
+
+.logout li {
+  list-style-type: none;
+}
+
+.nav-logout {
+  text-decoration: none;
+  font-weight: bold;
+}

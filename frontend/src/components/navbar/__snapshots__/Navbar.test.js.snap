@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component matches Snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="Navigation navbar navbar-expand-md"
+  >
+    <a
+      class="navbar-brand"
+      href="/homepage"
+    >
+      <img
+        alt="Movie Logo"
+        class="nav-logo"
+        src="../logo-png.png"
+      />
+    </a>
+    <div
+      class="navbar-collapse"
+    >
+      <div
+        class="logged-in-nav"
+      >
+        <div
+          class="nav"
+        >
+          <div
+            class="navbar-links-left"
+          >
+            <ul
+              class="navbar-links"
+            >
+              <li>
+                <a
+                  class="nav-link"
+                  href="/movies"
+                >
+                  Movies
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="/profile"
+                >
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="/mylist"
+                >
+                  MyList
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="/search"
+                >
+                  Search
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="logout"
+          >
+            <ul>
+              <li>
+                <a
+                  class="nav-logout"
+                  href="/homepage"
+                >
+                  Log out 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

@@ -1,0 +1,100 @@
+.review-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  text-align: left; /* Add this line to align text to the left */
+}
+
+.review-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 10px 20px;
+}
+.review-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0 10px 20px; 
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.review-username {
+  margin-bottom: 5px;
+}
+
+.review-comment {
+  margin-bottom: 10px;
+}
+
+.review-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-review-form {
+  margin-top: 10px;
+}
+
+.edit-review-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.edit-review-submit,
+.edit-review-cancel {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-review-submit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.edit-review-cancel {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.add-review-section {
+  margin-top: 20px;
+}
+
+.add-review-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-review-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-review-button:hover {
+  background-color: #0056b3;
+}
+
+.review-created-at {
+  font-size: 0.7rem; 
+}
