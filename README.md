@@ -19,5 +19,8 @@ Movies website is a full stack application frontend with React and backend with 
 ![movie-page](https://github.com/Thingo2906/Capstone-2/assets/93515126/15d11e03-adce-4faf-9c17-5979fdcc678d)
 ### Profile
 ![profile](https://github.com/Thingo2906/Capstone-2/assets/93515126/441794ac-9a8e-4d65-a3f1-09255944f59c)
+### Mylist
+![mylist](https://github.com/Thingo2906/Capstone-2/assets/93515126/027d60ae-1959-48a2-8fcd-7f03b90c9d60)
+
 
 
