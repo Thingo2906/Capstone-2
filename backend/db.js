@@ -1,7 +1,7 @@
 "use strict";
 /** Database setup for Movies. */
 const { Client } = require("pg");
-const { getDatabaseUri } = require("./config");
+const { getDatabaseUri } = require("./local_config");
 
 let db;
 

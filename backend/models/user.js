@@ -17,7 +17,7 @@ const {
 } = require("../expressError");
 
 //Use a bcrypt work factor when hashing passwords for secure storage.
-const { BCRYPT_WORK_FACTOR } = require("../config.js");
+const { BCRYPT_WORK_FACTOR } = require("../local_config.js");
 
 /** Related functions for users. */
 
@@ -97,7 +97,6 @@ class User {
     console.log(user);
     if (!user) throw new NotFoundError(`No user: ${username}`);
 
-
     const userMovieList = await db.query(
       `SELECT m.movie_id, m.movie_name
        FROM movies AS m
@@ -131,15 +130,15 @@ class User {
     // Hash the enter password
     if (data.password) {
       data.password = await bcrypt.hash(data.password, BCRYPT_WORK_FACTOR);
-    }  
+    }
     const { setCols, values } = sqlForPartialUpdate(data, {
-        firstName: "first_name",
-        lastName: "last_name",
-        isAdmin: "is_admin",
+      firstName: "first_name",
+      lastName: "last_name",
+      isAdmin: "is_admin",
     });
 
     const usernameVarIdx = "$" + (values.length + 1);
-  
+
     const querySql = `UPDATE users SET ${setCols} 
                       WHERE username = ${usernameVarIdx} 
                       RETURNING username, first_name AS "firstName",
@@ -152,8 +151,7 @@ class User {
 
     delete updatedUser.password;
     return updatedUser;
-    }
-   
+  }
 
   /** Delete given user from database; returns undefined. */
   static async remove(username) {
@@ -174,7 +172,7 @@ class User {
     );
     const user = preCheck.rows[0];
     if (!user) throw new NotFoundError(`No user: ${username}`);
-    const res =await db.query(
+    const res = await db.query(
       `INSERT INTO movies(username, movie_name, movie_id) VALUES ($1, $2, $3) RETURNING movie_name, movie_id`,
       [username, movie_name, movie_id]
     );
