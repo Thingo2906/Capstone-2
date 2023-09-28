@@ -1,6 +1,6 @@
 .searchMovie{
   min-height: 100vh;
-  background-color: pink;
+  background-image: url("../../../public/film.jpg");
 }
 
 .overview{

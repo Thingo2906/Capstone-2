@@ -52,7 +52,7 @@ label {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   margin-top: 10px;
   
 }
@@ -88,4 +88,9 @@ label {
 input{
   margin-left: 30px;
   display: flex;
+}
+
+.auth-form-container{
+  background-image: url("../public/film.jpg");
+  
 }

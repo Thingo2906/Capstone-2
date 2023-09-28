@@ -25,5 +25,10 @@
 .btn-margin {
   margin-right: 10px; /* Adjust the desired margin between the buttons */
 }
+.Homepage{
+  height: 100vh;
+  background-image: url("../../../public/film.jpg");
+  background-size:cover;
+}
 
 

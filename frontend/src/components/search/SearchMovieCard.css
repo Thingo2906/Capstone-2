@@ -37,4 +37,5 @@ img.float-right.ml-5 {
 
 .MovieContainer {
   position: relative;
+  background-color: pink;
 }
