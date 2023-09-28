@@ -9,6 +9,7 @@ Movies website is a full stack application frontend with React and backend with 
 - Backend: Express, Postgres.
 - Libraries & modules: bcrypt, Axios, JSON WEB TOKEN, jest, Suppertest.
 - Cloud service platform: render.com
+- Database cloud: https://www.elephantsql.com/
 ## API
 https://developer.themoviedb.org/reference/intro/getting-started
 ## Database
