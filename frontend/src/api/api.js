@@ -1,5 +1,7 @@
 import axios from "axios";
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
+// const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
+// Cloud
+const BASE_URL = "https://movies-backend-o0cs.onrender.com";
 
 // Api key for the movie data API
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -70,9 +72,8 @@ class MovieApi {
     let res = await this.request(`user/${username}`, data, "patch");
     console.debug("usereswjhdb", res.user);
     return res.user;
-
   }
- 
+
   /*********FOR MOVIE ******/
 
   //Adding movie to user's list
@@ -100,8 +101,13 @@ class MovieApi {
 
   // Add a new review
   static async addReview(username, movie_id, comment) {
-    let res = await this.request(`review/${username}/${movie_id}/add`, {
-      comment}, "post");
+    let res = await this.request(
+      `review/${username}/${movie_id}/add`,
+      {
+        comment,
+      },
+      "post"
+    );
     return res.added;
   }
 
@@ -119,7 +125,11 @@ class MovieApi {
 
   //Update a review
   static async updateReview(username, id, comment) {
-    let res = await this.request(`review/${username}/${id}`, { comment }, "patch");
+    let res = await this.request(
+      `review/${username}/${id}`,
+      { comment },
+      "patch"
+    );
     return res.updatedReview;
   }
 
@@ -197,7 +207,6 @@ class MovieApi {
     return res.data;
   }
 
-
   // Search detail for ecah movie in my list
   // static async searchDetailForMovieList(movieArray){
   //   let movie_list = [];
@@ -208,7 +217,7 @@ class MovieApi {
   //     if (detailedMovie && detailedMovie.id === movie.movie_id) {
   //        movie_list.push(detailedMovie);
   //     }
-      
+
   //   }
   //   console.log("movie after fetch",movie_list);
   //   return movie_list;
@@ -219,15 +228,14 @@ class MovieApi {
 
   static async getAllMoviesFromList(movieArray) {
     let all_movies = [];
-      for (const movie of movieArray) {
-        const detailedMovie = await MovieApi.searchDetail(movie[0]);
-        if (detailedMovie && detailedMovie.id === movie[0]) {
-          all_movies.push(detailedMovie);
-        }
+    for (const movie of movieArray) {
+      const detailedMovie = await MovieApi.searchDetail(movie[0]);
+      if (detailedMovie && detailedMovie.id === movie[0]) {
+        all_movies.push(detailedMovie);
       }
+    }
     console.log("my movie:", all_movies);
     return all_movies;
-    
   }
 }
 
