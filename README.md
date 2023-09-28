@@ -23,6 +23,8 @@ Movies website is a full stack application frontend with React and backend with 
 ![mylist](https://github.com/Thingo2906/Capstone-2/assets/93515126/027d60ae-1959-48a2-8fcd-7f03b90c9d60)
 ### Search
 ![search](https://github.com/Thingo2906/Capstone-2/assets/93515126/fdcee7a5-e4a9-4c28-af42-c0549bdf5ecb)
+## API
+https://developer.themoviedb.org/reference/intro/getting-started
 
 
 
