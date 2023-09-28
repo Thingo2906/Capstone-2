@@ -92,5 +92,6 @@ input{
 
 .auth-form-container{
   background-image: url("../public/film.jpg");
+  background-size: cover;
   
 }

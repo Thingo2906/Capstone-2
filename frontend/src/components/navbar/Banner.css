@@ -1,5 +1,5 @@
 .banner{
-  color:white;
+  color: rgb(255, 255, 255);
   object-fit: contain;
   height:448px;
 
@@ -27,6 +27,7 @@
   max-width:360px;
   height:80px;
   text-align: left;
+  
 }
 
 .banner-buttons{

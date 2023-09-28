@@ -10,7 +10,7 @@ function SignUpForm({ signUp }) {
     lastName:  "",
     email: "",
   });
-  const [formErrors, setFormErrors] = useState([]);
+  const [formErrors, setFormErrors] = useState("");
   const Navigate = useNavigate();
   console.log(
     "SignupForm",
@@ -29,6 +29,8 @@ function SignUpForm({ signUp }) {
       Navigate("/homePage");
     } else {
       setFormErrors(result.errors);
+      console.log("formErrors2352", formErrors);
+      
     }
   }
 
@@ -104,8 +106,8 @@ function SignUpForm({ signUp }) {
                 />
               </div>
 
-              {formErrors.length ? (
-                <Alert type="danger" message={formErrors} />
+              {formErrors !== ""?(
+                <Alert type="danger" error={formErrors} />
               ) : null}
 
               <button className="btn btn-primary" onSubmit={handleSubmit}>

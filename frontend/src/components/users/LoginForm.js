@@ -15,7 +15,7 @@ import Alert from "../../support/Alert";
 
 function LoginForm({ login }) {
   const [formData, setFormData] = useState({ username: "", password: "" });
-  const [formErrors, setFormErrors] = useState([]);
+  const [formErrors, setFormErrors] = useState("");
   const Navigate = useNavigate();
 
   async function handleSubmit(evt) {
@@ -64,8 +64,8 @@ function LoginForm({ login }) {
                 />
               </div>
 
-              {formErrors.length ? (
-                <Alert type="danger" messages={formErrors} />
+              {formErrors !== ""?(
+                <Alert type="danger" error={formErrors} />
               ) : null}
 
               <button
