@@ -9,7 +9,6 @@ Movies website is a full stack application frontend with React and backend with 
 - Backend: Express, Postgres.
 - Libraries & modules: bcrypt, Axios, JSON WEB TOKEN, jest, Suppertest.
 - Cloud service platform: render.com
-
 ## User flow
 * Users have to sign up/log in first.
 * For the Movie tab, the users can see different categories of movies.
