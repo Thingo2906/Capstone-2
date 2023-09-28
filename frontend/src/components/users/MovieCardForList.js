@@ -5,7 +5,7 @@ import "./MovieCardForList.css"
 //We get this base_URL from the movie API to generate the image
 // We drop the movie props from the MovieList, isLargeRow from the Routes, showAction and handleClick from MovieCategory
 // addMovieToList and removeMovieFromList from App component.
-const base_URL = "http://image.tmdb.org/t/p/original/";
+const base_URL = "https://image.tmdb.org/t/p/original/";
 function MovieCardForList({
   id,
   name,

@@ -8,7 +8,7 @@ import "./SearchMovieCard.css";
 
 //We get this base_URL from the movie API to generate the image
 
-const base_URL = "http://image.tmdb.org/t/p/original/";
+const base_URL = "https://image.tmdb.org/t/p/original/";
 
 function SearchMovieCard({
   id,

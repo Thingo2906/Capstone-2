@@ -1,7 +1,8 @@
 .movie-list {
-  margin-left: 2%;
+  margin-left: 0;
   padding-top: 5vh;
   height: 100vh; 
+  background-color: pink;
 }
 
 .poster{

@@ -1,5 +1,5 @@
 .Navigation {
-  background-color: #7f5539;
+  background-color: black;
   height: 70px;
   display: flex;
   align-items: center;
@@ -8,20 +8,22 @@
   top: 0;
   left: 0;
   position: relative;
+  
 }
 
 .nav-link.active {
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .nav-link {
   text-decoration: none;
+  color: red;
 }
 
 .navbar-brand {
   font-family: "Oleo Script Swash Caps", cursive;
-  color: #9f7913;
+  color: black;
   text-shadow: -1px 1px 0 rgb(238, 233, 233), 1px 1px 0 rgb(238, 233, 233),
     1px -1px 0 rgb(238, 233, 233), -1px -1px 0 rgb(238, 233, 233);
   font-size: 30px;
@@ -91,4 +93,5 @@
 .nav-logout {
   text-decoration: none;
   font-weight: bold;
+  color: red;
 }
