@@ -4,6 +4,12 @@ Movies website is a full stack application frontend with React and backend with 
 * Demo Link: https://movies-react-b0sz.onrender.com/
 * test username: testuser
 * test password: testuser1
+## Technology Stack:
+- Frontend: React, JavaScript, CSS.
+- Backend: Express, Postgres.
+- Libraries & modules: bcrypt, Axios, JSON WEB TOKEN, jest, Suppertest.
+- Cloud service platform: render.com
+
 ## User flow
 * Users have to sign up/log in first.
 * For the Movie tab, the users can see different categories of movies.
@@ -27,11 +33,6 @@ Movies website is a full stack application frontend with React and backend with 
 https://developer.themoviedb.org/reference/intro/getting-started
 ## Database
 ![Untitled](https://github.com/Thingo2906/Capstone-2/assets/93515126/20b63133-6353-4b80-9500-1139651b2a6e)
-## Technology Stack:
-- Frontend: React, JavaScript, CSS.
-- Backend: Express, Postgres.
-- Libraries & modules: bcrypt, Axios, JSON WEB TOKEN, jest, Suppertest.
-- Cloud service platform: render.com
 
 
 
