@@ -1,7 +1,7 @@
 import React from "react";
 function LoadingSpinner() {
   return (
-    <div>
+    <div data-testid="loading-spinner">
       <p>Loadding....</p>
     </div>
   );

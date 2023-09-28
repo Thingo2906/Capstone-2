@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import UserContext from "../../auth/UserContext";
 import {render} from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { hasUncaughtExceptionCaptureCallback } from "process";
 mockLogout = jest.fn();
 
 describe("Navbar Component", function(){

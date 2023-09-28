@@ -34,7 +34,6 @@ function MovieList({
 
   //window.scrollTo(0, 0); is used to scroll the page to the top whenever the component mounts or updates.
   useEffect(() => {
-    window.scrollTo(0, 0);
     async function getMovieFromList() {
       let all_movies = await fetchData(addedMovies);
       setMovies(all_movies); // now we get an array of movies

@@ -19,20 +19,21 @@ function Homepage(){
                <h1 className="mb-4 font-weight-bold">MOVIES</h1>
                <p>All the movies in one. Enjoys your movie with us!.</p>
                {currentUser? (
-                <h2>Welcome back! {currentUser.firstname}</h2>
-               ) : (
+                <h2>Welcome back! {currentUser.firstName}</h2>
+               ): (
                 <p>
                   <Link
                    className="btn btn-primary font-weight-bold btn-margin"
                    to="/login"
                   >
-                   Log in
+                   Login
                   </Link>
                   <Link className="btn btn-primary font-weight-bold" to="/signup">
                    Sign up
                   </Link>
                 </p>
-               )}
+               )
+               }
 
             </div>
         </div>

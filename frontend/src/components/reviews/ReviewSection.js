@@ -120,6 +120,7 @@ function ReviewSection({ id }) {
                         value={newReviewText}
                         onChange={handleChange}
                         placeholder="Edit your review..."
+                        data-testid={`edit-review-textarea-${review.id}`}
                       />
                       <button
                         className="edit-review-submit"
@@ -141,12 +142,14 @@ function ReviewSection({ id }) {
                       <button
                         className="edit-review-button"
                         onClick={() => setEditingReviewId(review.id)}
+                        data-testid={`edit-button-${review.id}`}
                       >
                         Edit
                       </button>
                       <button
                         className="delete-review-button"
                         onClick={() => handleDeleteReview(review.id)}
+                        data-testid={review.id}
                       >
                         Delete
                       </button>
