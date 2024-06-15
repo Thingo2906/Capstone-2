@@ -17,7 +17,11 @@ const {
 } = require("../expressError");
 
 //Use a bcrypt work factor when hashing passwords for secure storage.
+<<<<<<< HEAD
 const { BCRYPT_WORK_FACTOR } = require("../configs/config");
+=======
+const { BCRYPT_WORK_FACTOR } = require("../configs/config.js");
+>>>>>>> 64b155b3b97011539add7ce70c47bdc44d58974c
 
 /** Related functions for users. */
 
