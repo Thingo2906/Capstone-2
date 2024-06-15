@@ -1,5 +1,5 @@
 import axios from "axios";
-// const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
+//const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
 // Cloud
 const BASE_URL = "https://movies-backend-o0cs.onrender.com";
 
